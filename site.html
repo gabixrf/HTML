@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Oficina Diesel</title>
+    <style>
+        html {
+            scroll-behavior: smooth; 
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            padding: 100px 20px;
+            height: 100vh;
+        }
+
+        h1 {
+            padding-top: 60px;
+            text-align: center;
+        }
+
+        #inicio { background-color: #f4f4f4; }
+        #sobre { background-color: #ddd; }
+        #servicos { background-color: #bbb; }
+        #contato { background-color: #999; }
+
+        #contato {
+            padding: 50px 20px;
+            background-color: #f4f4f4 ;
+            text-align: center;
+        }
+
+        #contato form{
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        #contato input, #contato textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contato button {
+            background-color: orange ;
+            color: white ;
+            padding:12px 20px ;
+            border:none ;
+            border-radius:5px ;
+            cursor:pointer ;
+            font-weight: bold ;
+        }
+
+        #contato button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contatos</a>
+    </nav>
+
+    <section id="inicio">
+        <h1>Oficina Especializada em Veículos a Diesel</h1>
+        <p>Bem-vindo à nossa oficina...</p>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <h3>Especialistas em Veículos a Diesel em Montes Claros</h3>
+        <p>Quem tem caminhonete, caminhão ou utilitário a diesel sabe a
+            importância de manter o veículo em boas condições. 
+            Na <strong>NOME DA OFICINA</strong>, oferecemos serviços
+            de confiança, com agilidade e preço justo. Nosso compromisso
+            é garantir a segurança e o bom desempenho do seu motor a diesel,
+            seja para uso pessoal ou empresarial.
+        </p>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <p>Na <strong>NOME DA OFICINA</strong>, cuidamos do seu veículo
+        com <strong>profissionalismo e atenção aos detalhes.</strong>
+        Oferecemos uma ampla gama de serviços para garantir que seu carro ou caminhão
+        funcione sempre da melhor forma:
+        </p>
+        <ul>
+            <li><strong>Manunteção preventiva:</strong> revisão completa
+            para evitar problemas futuros e garantir a segurança do seu veículo.</li>
+            <br>
+            <li><strong>Reparos em motores diesel:</strong> diagnóstico e conserto de falhas,
+            garantindo potência e eficiência.</li>
+            <br>
+            <li><strong>Sistemas de injeção e turbocompressores:</strong> ajustes, limpeza e substituição
+            de componentes para desempenho ideal.</li>
+            <br>
+            <li><strong>Transmissão e embreagem:</strong> manutenção e reparos para que seu
+            veículo funcione de forma suave e confiável.</li>
+            <br>
+            <li><strong>Suspensão e freios:</strong> inspeção, manutenção e troca de peças,
+            assegurando conforto e segurança.</li>
+            <br>
+            <li><strong>Socorro mecânico:</strong> atendimento rápido em casa de pane ou imprevistos,
+            garantindo que você volte a rodar sem estresse.</li>
+            <br>
+            <li><strong>Serviços estéticos automotivos:</strong> pequenos reparos e cuidados
+            para deixar seu carro sempre com aparência impecável.</li>
+
+
+
+
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Estamos prontos para ouvir você. Preencha o formúlario abaixo para enviar sua mensagem, depoimento, 
+        sugestão ou solicitar um orçamento na oficina.
+        </p>
+
+        <form id="formContato">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="telefone"> Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone" required><br><br>
+            
+            <label for="mensagem"> Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+
+            <input type="submit" value="Enviar Mensagem">
+        </form>
+    </section>
+</body>
+</html>
